@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reggie's Coffee Shop - Contact Us</title>
+</head>
+
+<body>
+  <!-- This is an HTML comment -->
+  <!-- h1 is the most important heading we can use 6 levels of headings from h1 to h6 -->
+  <!-- Site Header -->
+  <header>
+    <h1>Reggie's Coffee Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Starting main content of the page -->
+  <main>
+    <h2>Contact Us</h2>
+    <!-- Adding table for hours -->
+    <table>
+      <caption>Hours of Operation</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mon - Fri</td>
+          <td>6 AM - 9 PM</td>
+        </tr>
+        <tr>
+          <td>Sat</td>
+          <td>8 AM - 11 PM</td>
+        </tr>
+        <tr>
+          <td>Sun</td>
+          <td>Closed</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Adding section for contact form -->
+    <section>
+      <h3>We love to hear from you!</h3>
+      <!-- Adding a form -->
+      <form action="thanks.html" method="get">
+        <div>
+          <label for="fullname">Your Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr.">
+        </div>
+        <div>
+          <label for="youremail">Email</label>
+          <input type="email" id="youremail" name="youremail" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+          <label for="tickets">How many tickets? &#40;sold in pairs&#41;</label>
+          <input type="number" id="tickets" name="tickets" min="2" max="10" step="2" value="2">
+        </div>
+        <div>
+          <label for="row">Select Row</label>
+          <select name="row" id="row">
+            <option value="front">Front Row</option>
+            <option value="center" selected>Center Row</option>
+            <option value="back">Back Row</option>
+          </select>
+        </div>
+        <div>
+          <h3>Have you been here before?</h3>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="past" checked>
+          <label for="no">No</label>
+          <input type="radio" id="no" name="past">
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <input type="checkbox" name="policies" id="policies">
+          <label for="policies">I agree to the terms and policies.</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <!-- Site Footer -->
+  <footer>
+    Copyright &copy; Reggie&apos;s Coffee Shop, 2021
+  </footer>
+</body>
+
+</html>
