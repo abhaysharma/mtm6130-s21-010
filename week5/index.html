@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Reggie's Coffee Shop - Home</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     <h1>Reggie's Coffee Shop</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="current">Home</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
@@ -32,16 +33,16 @@
   <!-- Starting main content of the page -->
   <main>
     <!-- Adding an on page link -->
-    <a href="#treatofweek">Treat of the week</a>
+    <a href="#treatofweek" class="orange-link">Treat of the week</a>
     <!-- article of the page, can be used stand-alone  -->
     <article>
-      <h2>Our Story</h2>
+      <h2 style="text-transform: uppercase;">Our Story</h2>
       <!-- Adding an image -->
       <img src="./images/coffee-shop.jpg" alt="coffee cup on pile of coffee beans">
       <p>
         We are <em>family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head barista of the shop. Maria is the pastry chef and is in-charge of the bake shop. Celebrating their 10<sup>th</sup> anniversary together in December 2021.
       </p>
-      <blockquote>
+      <blockquote class="large-text">
         We love coffee <cite>- Reggie and Maria</cite>
       </blockquote>
       <hr>
@@ -50,6 +51,7 @@
         <p>
           We are a local coffee shop based in Ottawa. Our specialty is <b>organic free-trade</b> coffee.
         </p>
+        <p>More text</p>
       </section>
     </article>
     <aside>
@@ -94,14 +96,14 @@
         </dd>
       </dl>
       <!-- Adding an external link -->
-      <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank">
+      <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank" class="orange-link large-text">
         Get the Recipe
       </a>
     </section>
     <!-- Adding section for menu table -->
     <section>
       <h3>Menu Specials</h3>
-      <table border>
+      <table>
         <thead>
           <tr>
             <th colspan="2">Items</th>
@@ -128,7 +130,7 @@
     </section>
   </main>
   <!-- Site Footer -->
-  <footer>
+  <footer class="site-footer">
     Copyright &copy; Reggie&apos;s Coffee Shop, 2021
   </footer>
 </body>
