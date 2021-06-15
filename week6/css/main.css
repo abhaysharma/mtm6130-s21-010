@@ -53,7 +53,12 @@ nav ul a {
 
 /* Direct child selector */
 article>p {
+  /* CSS Typography Properties */
   font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 /* Adjacent sibling selector */
