@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reggie's Coffee Shop - Home</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- This is an HTML comment -->
+  <!-- 
+    command + left-right arrow keys move to start or end of line 
+    command + up-down arrow keys move to start or end of page
+    shift + left-right arrow keys select per character
+    shift + up-down arrow keys select per line
+    shift + command + left-right arrow keys select to the end or start of line
+    shift + command + up-down arrow keys select to the end or start of page
+    shift + option + left-right arrow keys select per word
+  -->
+
+  <!-- h1 is the most important heading we can use 6 levels of headings from h1 to h6 -->
+  <!-- Site Header -->
+  <header>
+    <h1>Reggie's Coffee Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Starting main content of the page -->
+  <main>
+    <!-- Adding an on page link -->
+    <a href="#treatofweek" class="orange-link">Treat of the week</a>
+    <!-- article of the page, can be used stand-alone  -->
+    <article>
+      <h2 style="text-transform: uppercase;">Our Story</h2>
+      <!-- Adding an image -->
+      <img src="./images/coffee-shop.jpg" alt="coffee cup on pile of coffee beans">
+      <p>
+        We are <em>family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head barista of the shop. Maria is the pastry chef and is in-charge of the bake shop. Celebrating their 10<sup>th</sup> anniversary together in December 2021.
+      </p>
+      <blockquote class="large-text">
+        We love coffee <cite>- Reggie and Maria</cite>
+      </blockquote>
+      <hr>
+      <section>
+        <h3>Ottawa</h3>
+        <p>
+          We are a local coffee shop based in Ottawa. Our specialty is <b>organic free-trade</b> coffee.
+        </p>
+        <p>More text</p>
+      </section>
+    </article>
+    <aside>
+      <h3>Merchandise</h3>
+      <!-- command + / to add a comment -->
+      <!-- Adding an unordered list -->
+      <ul>
+        <li>T-shirts</li>
+        <li>Hats</li>
+        <li>Hoodies</li>
+      </ul>
+    </aside>
+    <!-- Adding section for ordered list -->
+    <section>
+      <h3>Events</h3>
+      <ol>
+        <li>June 23<sup>rd</sup> - Coffee for Hope Foundation</li>
+        <li>July 17<sup>th</sup> - Live Music</li>
+      </ol>
+    </section>
+    <!-- Adding section for description list -->
+    <section id="treatofweek">
+      <h3>Treat of the Week</h3>
+      <dl>
+        <dt>Name</dt>
+        <dd>Banana Bread</dd>
+        <dt>Calories</dt>
+        <dd>250</dd>
+        <dt>Ingredients</dt>
+        <dd>
+          <ul>
+            <li>all purpose flour</li>
+            <li>backing soda</li>
+            <li>backing powder</li>
+            <li>salt</li>
+            <li>butter</li>
+            <li>sugar</li>
+            <li>eggs</li>
+            <li>lemon juice</li>
+            <li>banana</li>
+          </ul>
+        </dd>
+      </dl>
+      <!-- Adding an external link -->
+      <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank" class="orange-link large-text">
+        Get the Recipe
+      </a>
+    </section>
+    <!-- Adding section for menu table -->
+    <section>
+      <h3>Menu Specials</h3>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Items</th>
+            <th rowspan="2">Price</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>Calories</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Banana Bread</td>
+            <td>250</td>
+            <td>&dollar; 6</td>
+          </tr>
+          <tr>
+            <td>Oatmeal</td>
+            <td>110</td>
+            <td>&dollar; 8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    Copyright &copy; Reggie&apos;s Coffee Shop, 2021
+  </footer>
+</body>
+
+</html>
