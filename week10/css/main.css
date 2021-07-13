@@ -239,6 +239,28 @@ p {
   text-transform: uppercase;
 }
 
+/* Navigation */
+.nav-list li {
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+  background-color: #00ADD8;
+  color: inherit;
+}
+
 /* Mobile App Section */
 .btn {
   text-decoration: none;
@@ -252,6 +274,19 @@ p {
 .btn:focus {
   background-color: #00ADD8;
   color: inherit;
+}
+
+/* Actions Section */
+.actions-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.actions-list li {
+  max-width: 50%;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 /* Footer */
@@ -290,6 +325,21 @@ p {
     color: white;
   }
 
+  /* Navigation */
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    flex: 1;
+    border: none;
+    border-right: 1px solid grey;
+  }
+
+  .nav-list li:last-child {
+    border: none;
+  }
+
   /* App Section */
   .app img {
     width: 40%;
@@ -300,5 +350,14 @@ p {
   .app .btn {
     float: right;
 
+  }
+}
+
+/* -----------------------------
+      Media Query 800px
+----------------------------- */
+@media screen and (min-width: 800px) {
+  .actions-list li {
+    max-width: 20%;
   }
 }
