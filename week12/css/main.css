@@ -1,0 +1,33 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+h1 i::before {
+  font-size: 3rem;
+  color: coral;
+}
+
+.im-plane::before {
+  color: purple;
+}
+
+footer::before {
+  content: "Hello";
+}
+
+footer::after {
+  content: "Bye";
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
